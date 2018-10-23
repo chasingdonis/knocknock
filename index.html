@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="knocknock neighborhood app">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Knocknock</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
+    <link rel="stylesheet" href="styles.css">
+     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC" />
+      
+  </head>
+  <body>
+      <div class="title" id="home">
+          <!-- <div class="logo"></div> -->
+      <h1>Knocknock</h1>
+      <div class="sub">Smart Building. Connected</div>
+          </div>
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#home">Home</a>
+        <a class="mdl-navigation__link" href="#about">Overview</a>
+        <a class="mdl-navigation__link" href="#feature">Features</a>
+        <a class="mdl-navigation__link" href="#support">Support</a>
+      </nav>
+    </div>
+  </header>
+ <section id="about"> 
+          <div class="about">
+                   <img src="images/about.png">
+              <h2>Overview</h2>
+              <div class="text">
+                  <p>Many of the barriers minority and immigrant family face when they are renting an apartment are the result of invisible force of unconscious bias and stereotypes. The language barriers also intensify the misunderstanding of each other. </p>
+                  <p>This app is to break down those barriers and let people interact with their neighbors freely and more openly, to create a respectful digital space that supports people from different background to understand each other; to build a stronger community that minimizes crimes and raises neighborhood awareness and work together to create a better environment to live in.</p>
+<p>Multiple languages support will be available through live-time translation in the app. The website I’m working on is to introduce and promote the app, it will demonstrate the features of the app and how to make neighborhood communities livable and strong.</p>
+</div>
+          </div> 
+      </section>
+      
+       <section id="feature"> 
+          <div class="feature">
+              <h2>Features</h2>
+                  <p>Many of the barriers minority and immigrant family face when they are renting an apartment are the result of invisible force of unconscious bias and stereotypes. The language barriers also intensify the misunderstanding of each other. </p>
+                  <p>This app is to break down those barriers and let people interact with their neighbors freely and more openly, to create a respectful digital space that supports people from different background to understand each other; to build a stronger community that minimizes crimes and raises neighborhood awareness and work together to create a better environment to live in.</p>
+<p>Multiple languages support will be available through live-time translation in the app. The website I’m working on is to introduce and promote the app, it will demonstrate the features of the app and how to make neighborhood communities livable and strong.</p>
+</div> 
+      </section>
+
+    
+        
+      <div class="mdl-layout__obfuscator"></div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
+      var link = el.querySelector('a');
+      if(!link) {
+        return;
+      }
+      var target = link.getAttribute('href');
+      if(!target) {
+        return;
+      }
+      el.addEventListener('click', function() {
+        location.href = target;
+      });
+    });
+  </script>
+</html>
