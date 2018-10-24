@@ -84,6 +84,19 @@ h1 {
     width: 20%;
     padding: 20px
 }
+.feature2 h2 {
+    font-family: 'Lobster'; 
+    position: absolute;
+     top: 100px;
+     left: 50px;
+}
+.text2 {
+    position: absolute;
+    font-family: "Cochin", Helvetica, Arial, sans-serif;
+    top: 200px;
+    left: 50px;
+    width: 40%;
+}
 
 @media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
        (max-width: 512px)  and (min-resolution: 1.5dppx),
