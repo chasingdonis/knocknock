@@ -57,7 +57,7 @@ h1 {
      left: 5%;
 }
 .text {
-    font-family: "Cochin", Helvetica, Arial, sans-serif;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
     position: relative;
     float: left;
     clear:both;
@@ -83,10 +83,11 @@ h1 {
     left: 5%;
     top:0;
     height: 500px;
+    margin: -100px 0 100px 0;
 }
 .right {
     color: white;
-    font-family: "Cochin", Helvetica, Arial, sans-serif;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
     position: relative;
     float: right;
     font-weight: bold;
@@ -121,7 +122,7 @@ h1 {
 }
 .text2 {
     position: relative;
-    font-family: "Cochin", Helvetica, Arial, sans-serif;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
     float: left;
     clear:both;
     top: 5%;
@@ -140,7 +141,7 @@ h1 {
 }
 .right2 {
     color: white;
-    font-family: "Cochin", Helvetica, Arial, sans-serif;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
     position: relative;
     float: right;
     font-weight: bold;
@@ -168,12 +169,87 @@ h1 {
 }
 .feature4 .text2{
     position: relative;
-    font-family: "Cochin", Helvetica, Arial, sans-serif;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
     float: left;
     clear:both;
     top: 15%;
 }
 
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 12px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #86c4ac;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #40918c;
+}
+
+label{
+    color: white;
+}
+
+#contact {
+    border:5px solid #86c4ac;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    height: 500px;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: -50px 0 100px 0;
+}
+
+.container {
+    border-radius: 20px;
+    padding: 3px;
+    width: 40%;
+    float: right;
+    position: relative;
+    right:20px;
+}
+
+#contact h2 {
+    font-family: 'Lobster'; 
+    position: relative;
+    top: 2%;
+    width: 41%;
+    float: right;
+    Color:#fff;
+}
+
+.walk {
+    background-image: url("images/walk.gif");
+    background-repeat: no-repeat;
+    height:784px;
+}
+.left {
+    float: left;
+    position: relative;
+    left: 10%;
+    padding: 10px;
+    color: white;
+    clear: both;
+}
+.left img {
+    padding: 20px 20px 20px 0;
+}
 
 @media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
        (max-width: 512px)  and (min-resolution: 1.5dppx),
