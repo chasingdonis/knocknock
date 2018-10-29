@@ -53,15 +53,23 @@ h1 {
     position: relative;
     float: left;
     clear:both;
-     top: 10%;
+     top: 8%;
      left: 5%;
+}
+.about img{
+    width:37%;
+    position: relative;
+    float: right;
+    right: 15%;
+    top: -30%;
+    clear: both;
 }
 .text {
     font-family: "Nunito", Helvetica, Arial, sans-serif;
     position: relative;
     float: left;
     clear:both;
-     top: 10%;
+     top: 8%;
     left: 5%;
     width: 40%;
 }
@@ -70,7 +78,7 @@ h1 {
     float: right;
     position: relative;
     top: 8%;
-    right:7%;
+    right:1%;
     font-size:48px;
     z-index: 5;
     Color:#fff;
