@@ -38,16 +38,22 @@
       <h1>Knocknock</h1>
       <div class="sub">Smart Building. Connected</div>
           </div>
+
+      <div class="menu" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
         <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
 
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#home">Home</a>
-        <a class="mdl-navigation__link" href="#about">Overview</a>
-        <a class="mdl-navigation__link" href="#feature">The App</a>
+        <a class="mdl-navigation__link" href="#about">Story</a>
+        <a class="mdl-navigation__link" href="#feature">Knocknock</a>
         <a class="mdl-navigation__link" href="#feature2">Experience</a>
           <a class="mdl-navigation__link" href="#feature3">Connect</a>
-          <a class="mdl-navigation__link" href="#feature4">and More</a>
+          <a class="mdl-navigation__link" href="#feature4">More</a>
         <a class="mdl-navigation__link" href="#contact">Support</a>
       </nav>
     </div>
@@ -55,7 +61,7 @@
  <section id="about"> 
           <div class="about">
                   <!-- <img src="images/about.png">-->
-              <h2>Overview</h2>
+              <h2>Story</h2>
               <div class="text">
                   <p>Many of the barriers minority and immigrant family face when they are renting an apartment are the result of invisible force of unconscious bias and stereotypes. The language barriers also intensify the misunderstanding of each other. </p>
                   <p>This app is to break down those barriers and let people interact with their neighbors freely and more openly, to create a respectful digital space that supports people from different background to understand each other; to build a stronger community that minimizes crimes and raises neighborhood awareness and work together to create a better environment to live in.</p>
@@ -68,7 +74,7 @@
        <section id="feature"> 
           <div class="feature">
               <h2>The App</h2>
-              <img src="images/home.png"><img src="images/burger.png">
+             <!-- <img src="images/home.png"><img src="images/burger.png">-->
               <div class="right">
                   <p>The login page is easy to use. You could either type in your username and password or you start a new account by clicking register. </p>
                    <p>The navigation links under the topper right menu give you a shortcut to the resources, search for keywords, and some introduction about this app and provide how to get involved option, along with the contact link.</p>
@@ -90,10 +96,9 @@
       </section>
     
       <section id="feature3"> 
-          <div class="feature">
-              <h2>Connecting...</h2>
                <div class="feature3">
-                   <img src="images/category.png"><img src="images/startchat.png"><img src="images/chat.png"></div>
+                                 <h2>Connect</h2>
+                   <!--<img src="images/category.png"><img src="images/startchat.png">--><img src="images/chat1.png">
               <div class="right2">
                   <p>Before start a chat, you could pick your topic in the category page. </p>
                    <p>You choose a neighbor name who you want to contact with, and you have the option to select the chat to be private or public, depends on your suject. You can also pick Urgent or Not Urgent  before startting a chat.</p>
@@ -103,14 +108,14 @@
       
       <section id="feature4"> 
           <div class="feature4">
-              <h2>and More..</h2>
+              <h2>More</h2>
               <div class="text2">
             
                   <p>It also has moment page where you could view your neighbors' lately activities or you can update yours. Interaction is a choice but you could also choose to keep your life private. </p>
 <p>It also gives your other options to take action on your building or in the neighborhood. It doesn't only provide shortcut for paying rent, but it also have linka to file complaint, solve dispute, and effectively communicate with your landlord on urgent matters. </p>
                   <p>It conveniently and simply serves your needs. It makes conversation with your neighbors and landload easy with the help of the digital technology. </p>
          
-</div> <div class="feature3">
+</div> <div class="feature5">
               <img src="images/moment.png" style="margin-left:8%; padding: 20px;"><img src="images/action.png">
               </div> </div>
       </section>
@@ -171,5 +176,8 @@
         location.href = target;
       });
     });
+      function myFunction(x) {
+    x.classList.toggle("change");
+}
   </script>
 </html>

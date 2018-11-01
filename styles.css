@@ -29,16 +29,16 @@ h1 {
     font-family: 'Amatic';
     font-size: 10em;
     text-align: center;
-    color: #e6e6e6;
+    color: #86c4ac;
     padding-top: 10%;
 }
 .sub{
     text-align: center;
     font-family: 'Lobster';
-    font-size: 22px;
+    font-size: 28px;
      position: relative;
      top:10px;
-     color: #288e8e;
+     color: #e6e6e6;
 }
 .about{
     background-image: url("images/about.png");
@@ -86,6 +86,10 @@ h1 {
 
 .feature {
     border:5px solid #86c4ac;
+    background-image: url("images/home_burger.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40%;
     width: 90%;
     position: relative;
     left: 5%;
@@ -98,9 +102,10 @@ h1 {
     font-family: "Nunito", Helvetica, Arial, sans-serif;
     position: relative;
     float: right;
+    clear: both;
     font-weight: bold;
     right:0;
-    top: -300px;
+    top: -50px;
     width: 40%;
     padding: 50px;
     font-size: 16px;
@@ -132,19 +137,49 @@ h1 {
     position: relative;
     font-family: "Nunito", Helvetica, Arial, sans-serif;
     float: left;
-    clear:both;
-    top: 5%;
+    top: 120px;
     left: 5%;
     width: 40%;
 }
 .feature2 img {
     width: 15%;
-    padding: 5px 10px;
+    padding: 10px 10px;
+    margin-top: 5%;
 }
-.feature3 img {
+
+.feature3 {
+    border:5px solid #86c4ac;
+    background-image: url("images/startchat1.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40%;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    top:-50px;
+    height: 500px;
+}
+.feature3 h2 {
+    font-family: 'Lobster'; 
+    float: right;
+    position: relative;
+    top: 8%;
+    right:1%;
+    font-size:48px;
+    z-index: 5;
+    Color:#fff;
+}
+.feature5 img {
     position: relative;
     top:50px;
     width: 15%;
+    padding: 0;
+}
+.feature3 img {
+    position: relative;
+    top:120px;
+    left: 30%;
+    width: 25%;
     padding: 0;
 }
 .right2 {
@@ -152,9 +187,10 @@ h1 {
     font-family: "Nunito", Helvetica, Arial, sans-serif;
     position: relative;
     float: right;
+    clear: both;
     font-weight: bold;
     right:0;
-    top: -150px;
+    top: 20px;
     width: 40%;
     padding: 30px;
     font-size: 16px;
@@ -257,6 +293,35 @@ label{
 }
 .left img {
     padding: 20px 20px 20px 0;
+}
+
+.menu {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+    top:5%;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 3px;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 @media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
