@@ -60,8 +60,8 @@ h1 {
     width:37%;
     position: relative;
     float: right;
-    right: 15%;
-    top: -30%;
+    right: 16%;
+    top: -25%;
     clear: both;
 }
 .text {
@@ -78,7 +78,7 @@ h1 {
     float: right;
     position: relative;
     top: 8%;
-    right:1%;
+    right:-25%;
     font-size:48px;
     z-index: 5;
     Color:#fff;
@@ -105,7 +105,7 @@ h1 {
     clear: both;
     font-weight: bold;
     right:0;
-    top: -50px;
+    top: -10px;
     width: 40%;
     padding: 50px;
     font-size: 16px;
@@ -164,16 +164,17 @@ h1 {
     float: right;
     position: relative;
     top: 8%;
-    right:1%;
+    right:3%;
     font-size:48px;
     z-index: 5;
     Color:#fff;
 }
 .feature5 img {
     position: relative;
-    top:50px;
-    width: 15%;
-    padding: 0;
+    width: 10%;
+    right: 30%;
+    top: 350px;
+    padding: 20px;
 }
 .feature3 img {
     position: relative;
@@ -207,7 +208,7 @@ h1 {
 .feature4 h2 {
     font-family: 'Julius Sans One',"Lobster", Helvetica, sans-serif;
     position: relative;
-     top: 12%;
+     top: 10%;
      left:5%;
     width:95%;
 }
@@ -216,7 +217,7 @@ h1 {
     font-family: "Nunito", Helvetica, Arial, sans-serif;
     float: left;
     clear:both;
-    top: 15%;
+    top: 10%;
 }
 
 input[type=text], select, textarea {
@@ -275,6 +276,7 @@ label{
     top: 2%;
     width: 41%;
     float: right;
+    right: 5%;
     Color:#fff;
 }
 
@@ -406,8 +408,8 @@ a:hover
 #menu
 {
   position: absolute;
-  width: 120px;
-  margin: -100px 0 0 -120px;
+  width: 130px;
+  margin: -100px 0 0 -130px;
   padding: 50px;
   padding-top: 125px;
   font-family: 'Julius Sans One',"Nunito", Helvetica, Arial, sans-serif;
