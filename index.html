@@ -30,6 +30,7 @@
      <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
       <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel='stylesheet'>
       <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Amaranth|Baloo+Bhaijaan|Julius+Sans+One" rel="stylesheet">
       
   </head>
   <body>
@@ -39,13 +40,26 @@
       <div class="sub">Smart Building. Connected</div>
           </div>
 
-      <div class="menu" onclick="myFunction(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
+<nav role="navigation">
+  <div id="menuToggle">
 
-        <header class="mdl-layout__header mdl-layout__header--transparent">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+      <a href="#about"><li>Story</li></a>
+      <a href="#feature"><li>The App</li></a>
+      <a href="#feature2"><li>Layout</li></a>
+      <a href="#feature3"><li>Experience</li></a>
+      <a href="#feature4"><li>More</li></a>
+       <a href="#contact"><li>Download</li></a>
+    </ul>
+  </div>
+</nav>  
+      <!--
+<header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
 
       <nav class="mdl-navigation">
@@ -57,7 +71,7 @@
         <a class="mdl-navigation__link" href="#contact">Support</a>
       </nav>
     </div>
-  </header>
+  </header>-->
  <section id="about"> 
           <div class="about">
                   <!-- <img src="images/about.png">-->
@@ -84,7 +98,7 @@
     
 <section id="feature2"> 
           <div class="feature2">
-              <h2>Experience</h2>
+              <h2>Layout</h2>
               <div class="text2">
             
                   <p>It only takes a few minute to register an account. The register page is simple and easy to use.</p>
@@ -97,7 +111,7 @@
     
       <section id="feature3"> 
                <div class="feature3">
-                                 <h2>Connect</h2>
+                                 <h2>Experience</h2>
                    <!--<img src="images/category.png"><img src="images/startchat.png">--><img src="images/chat1.png">
               <div class="right2">
                   <p>Before start a chat, you could pick your topic in the category page. </p>
@@ -180,4 +194,5 @@
     x.classList.toggle("change");
 }
   </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 </html>
