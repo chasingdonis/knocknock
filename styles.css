@@ -22,7 +22,7 @@ body::before {
 }
 .title {
     width: 100%;
-    height: 550px;
+    height: 600px;
 }
 
 h1 {
@@ -41,7 +41,7 @@ h1 {
      color: #e6e6e6;
 }
 .about{
-    background-image: url("images/about.png");
+    background-image: url("images/about.gif");
     background-size:100%;
     background-repeat: no-repeat;
     max-width:100%;
@@ -56,14 +56,15 @@ h1 {
      top: 8%;
      left: 5%;
 }
-.about img{
+ /* .about img{
     width:37%;
     position: relative;
     float: right;
     right: 16%;
     top: -25%;
     clear: both;
-}
+    z-index: 10;
+}*/
 .text {
     font-family: "Nunito", Helvetica, Arial, sans-serif;
     position: relative;
@@ -73,12 +74,16 @@ h1 {
     left: 5%;
     width: 40%;
 }
+p{
+    font-size: 15px;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+}
 .feature h2 {
     font-family: 'Julius Sans One',"Lobster", Helvetica, sans-serif;
     float: right;
     position: relative;
-    top: 8%;
-    right:-25%;
+    top: 3%;
+    right:5%;
     font-size:48px;
     z-index: 5;
     Color:#fff;
@@ -95,7 +100,7 @@ h1 {
     left: 5%;
     top:0;
     height: 500px;
-    margin: -100px 0 100px 0;
+    margin: 0;
 }
 .right {
     color: white;
@@ -105,7 +110,7 @@ h1 {
     clear: both;
     font-weight: bold;
     right:0;
-    top: -10px;
+    top: 0;
     width: 40%;
     padding: 50px;
     font-size: 16px;
@@ -156,7 +161,7 @@ h1 {
     width: 90%;
     position: relative;
     left: 5%;
-    top:-50px;
+    top:0;
     height: 500px;
 }
 .feature3 h2 {
@@ -180,7 +185,7 @@ h1 {
     position: relative;
     top:120px;
     left: 30%;
-    width: 25%;
+    width: 22%;
     padding: 0;
 }
 .right2 {
@@ -193,7 +198,7 @@ h1 {
     right:0;
     top: 20px;
     width: 40%;
-    padding: 30px;
+    padding: 50px;
     font-size: 16px;
     background-color: #86c4ac;
 }
@@ -258,7 +263,7 @@ label{
     font-family: "Nunito", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
-    margin: -50px 0 100px 0;
+    margin: 0 0 100px 0;
 }
 
 .container {
@@ -278,6 +283,34 @@ label{
     float: right;
     right: 5%;
     Color:#fff;
+}
+
+@media 
+       (min-width: 1500px) {
+.feature3 img {
+  width:20%;
+  top:50px;
+           }
+
+#contact, .feature3, .feature {
+    position: relative;
+    margin:100px 0 100px 0;
+}
+.right { 
+    bottom: 0;
+}
+}
+
+@media (max-width: 1200px){
+    .about, .feature2, .feature4 {
+    background-size:200%;
+    }
+}
+@media 
+       (min-width: 1200px) and (max-width: 1370px)  {
+ #contact, .feature3, .feature {
+    margin:-100px 0 100px 0;
+} 
 }
 
 .walk {
