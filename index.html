@@ -22,7 +22,6 @@
     <meta name="msapplication-TileColor" content="#3372DF">
 
     <link rel="shortcut icon" href="images/favicon.png">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
@@ -33,11 +32,13 @@
       <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Amaranth|Baloo+Bhaijaan|Julius+Sans+One" rel="stylesheet">
       
   </head>
-  <body>
+  <body class="speed">
       <div class="title" id="home">
           <!-- <div class="logo"></div> -->
       <h1>Knocknock</h1>
-      <div class="sub">Smart Building. Connected</div>
+      <div class="sub">Smart Building. Connected<br>
+          <a href="#about"><img src="images/arrow.png"></a></div>
+          
           </div>
 
 <nav role="navigation">
@@ -49,12 +50,12 @@
     <span></span>
 
     <ul id="menu">
-      <a href="#about"><li>Story</li></a>
-      <a href="#feature"><li>Knocknock</li></a>
-      <a href="#feature2"><li>Layout</li></a>
-      <a href="#feature3"><li>Experience</li></a>
-      <a href="#feature4"><li>More</li></a>
-       <a href="#contact"><li>Download</li></a>
+      <a href="#about" class="hvr-wobble-bottom"><li>Story</li></a>
+      <a href="#feature" class="hvr-wobble-bottom"><li>Knocknock</li></a>
+      <a href="#feature2" class="hvr-wobble-bottom"><li>Layout</li></a>
+      <a href="#feature3" class="hvr-wobble-bottom"><li>Experience</li></a>
+      <a href="#feature4" class="hvr-wobble-bottom"><li>More</li></a>
+       <a href="#contact" class="hvr-wobble-bottom"><li>Download</li></a>
     </ul>
   </div>
 </nav>  
@@ -137,9 +138,9 @@
       <!-- Contact -->
 			<section id="contact">
 				<div class="left">
-                    <p style="font-size: 18px; font-weight:700">The app is available at </p>
-                    <a href="#"><img src="images/gplay.png"></a>
-                    <a href="#"><img src="images/aplay.png"></a>
+                    <p style="font-size: 18px;font-family: 'Nunito', Helvetica;">The app will be available at </p>
+                    <a href="#" class="hvr-float"><img src="images/gplay.png"></a>
+                    <a href="#" class="hvr-float"><img src="images/aplay.png"></a>
                     <br><br>
                 <p>English language option available.</p>
                 <p>中文选择，我们可以帮到你.</p>
@@ -167,7 +168,7 @@
     <label for="subject">Message</label>
     <textarea id="subject" name="subject" placeholder="Write your message here.." style="height:80px"></textarea>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" class="hvr-float">
   </form>
 </div>
 			</section>
@@ -193,6 +194,25 @@
       function myFunction(x) {
     x.classList.toggle("change");
 }
+      
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+      var $root = $('html, body');
+
+$('a[href^="#"]').click(function () {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+
+    return false;
+});
   </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 </html>
