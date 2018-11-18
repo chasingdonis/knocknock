@@ -104,7 +104,7 @@ p{
     border:5px solid #86c4ac;
     background-image: url("images/home_burger.png");
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: left center;
     background-size: 40%;
     width: 90%;
     position: relative;
@@ -112,6 +112,10 @@ p{
     top:0;
     height: 500px;
     margin: 0;
+}
+.feature3:hover,.feature:hover {
+ background-size: 50%;
+    transition: all 1.5s;
 }
 .right {
     color: white;
@@ -195,10 +199,24 @@ p{
 .feature3 img {
     position: relative;
     top:120px;
-    left: 30%;
+    left: 31%;
     width: 22%;
     padding: 0;
+    z-index: 9;
 }
+.feature2 img:hover,.feature5 img:hover,.feature3 img:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+
+    -webkit-transition: transform 1.05s ease-in-out;
+    -moz-transition:transform 1.05s ease-in-out;
+    -ms-transition:transform 1.05s ease-in-out;
+}
+
 .right2 {
     color: white;
     font-family: "Nunito", Helvetica, Arial, sans-serif;
