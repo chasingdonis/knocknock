@@ -56,7 +56,7 @@ h1 {
     background-size:100%;
     background-repeat: no-repeat;
     max-width:100%;
-    height:932px;
+    height:780px;
     margin:0 auto;
 }
 .about h2 {
@@ -96,7 +96,6 @@ p{
     top: 3%;
     right:5%;
     font-size:48px;
-    z-index: 5;
     Color:#fff;
 }
 
@@ -150,7 +149,7 @@ p{
     background-size:100%;
     background-repeat: no-repeat;
     max-width:100%;
-    height:932px;
+    height:780px;
     margin:0 auto;
 }
 .text2 {
@@ -186,7 +185,6 @@ p{
     top: 8%;
     right:3%;
     font-size:48px;
-    z-index: 5;
     Color:#fff;
 }
 .feature5 img {
@@ -236,7 +234,7 @@ p{
     background-size:100%;
     background-repeat: no-repeat;
     max-width:100%;
-    height:932px;
+    height:780px;
     margin:0 auto;
 }
 .feature4 h2 {
@@ -491,15 +489,12 @@ a:hover
   
   cursor: pointer;
   
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0; 
+  z-index: 2; 
   
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
 #menuToggle span
 {
   display: block;
@@ -511,7 +506,7 @@ a:hover
   background: #f4f4f4;
   border-radius: 3px;
   
-  z-index: 1;
+  z-index: 999;
   
   transform-origin: 4px 0px;
   
@@ -530,10 +525,7 @@ a:hover
   transform-origin: 0% 100%;
 }
 
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
+
 #menuToggle input:checked ~ span
 {
   opacity: 1;
@@ -541,27 +533,18 @@ a:hover
   background: #232323;
 }
 
-/*
- * But let's hide the middle one.
- */
+
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu
 {
   position: absolute;
@@ -570,13 +553,10 @@ a:hover
   padding: 50px;
   padding-top: 125px;
   font-family: 'Julius Sans One',"Nunito", Helvetica, Arial, sans-serif;
-  z-index: 100;
   background: #f4f4f4;
   opacity: 0.9;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   
@@ -585,7 +565,7 @@ a:hover
 
 #menu a
 {
-    z-index: 999;  
+    z-index: 9;  
 }
 
 #menu li
@@ -594,9 +574,6 @@ a:hover
   font-size: 22px;
 }
 
-/*
- * And let's slide it in from the left
- */
 #menuToggle input:checked ~ ul
 {
   transform: none;
